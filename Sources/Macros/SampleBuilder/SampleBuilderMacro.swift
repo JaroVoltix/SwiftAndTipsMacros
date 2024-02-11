@@ -82,6 +82,7 @@ extension SampleBuilderMacro {
         let sampleCode = VariableDeclSyntax(
             modifiers: DeclModifierListSyntax {
                 DeclModifierSyntax(name: .keyword(.static))
+                DeclModifierSyntax(name: .keyword(.public))
             },
             bindingSpecifier: .keyword(.var),
             bindings: PatternBindingListSyntax {
