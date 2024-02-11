@@ -14,6 +14,7 @@
 
 import Foundation
 import DataCategory
+import CoreFoundation
 
 fileprivate typealias Provider = FakeDataProvider
 
