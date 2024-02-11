@@ -42,7 +42,6 @@ public struct DataGenerator {
     public var cgpoint: () -> CGPoint
     public var cgrect: () -> CGRect
     public var cgsize: () -> CGSize
-    public var cgvector: () -> CGVector
     public var cgfloat: () -> CGFloat
     public var url: () -> URL
 }
@@ -71,7 +70,6 @@ public extension DataGenerator {
         cgpoint: { CGPoint() },
         cgrect: { CGRect() },
         cgsize: { CGSize() },
-        cgvector: { CGVector() },
         cgfloat: { CGFloat() },
         url: { URL(string: "https://www.apple.com")! }
     )
@@ -150,7 +148,6 @@ public extension DataGenerator {
             cgpoint: { CGPoint() },
             cgrect: { CGRect() },
             cgsize: { CGSize() },
-            cgvector: { CGVector() },
             cgfloat: { CGFloat() },
             url: {
                 guard case .image(let width, let height) = dataCategory?.category
